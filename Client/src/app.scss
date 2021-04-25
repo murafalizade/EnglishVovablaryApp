@@ -1,0 +1,341 @@
+$placeholde-color:#a87d75;
+$googleblue:#4285F4;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*{
+    margin:0%;
+    padding:0%;
+    border:none;
+    font-family: sans-serif;
+
+}
+
+h3{
+    font-weight: lighter;
+    color:white
+}
+button{
+        width: 150px;
+        height: 50px;
+       &:focus{
+            border:none;
+            outline:none;
+        }
+        &hover{
+            cursor:pointer;
+        }
+}
+.main{
+    z-index: -1;
+    border:1px solid;
+    border-radius: 20px;
+    width:360px;
+    height: 640px;
+    margin-left: 40%;
+    background-color: black;
+    h1{
+        text-transform:uppercase ;
+        text-align: left;
+        margin-top: 150px;
+        font-size: 50px;
+        color:white;
+        padding-left: 20px;
+        span{
+            font-weight: bold;
+            color:#000;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fff;
+        }
+    }
+    p{
+        margin-top: 15px;
+        color:white;
+        font-weight: lighter;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+            a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            cursor:default;
+        }
+    button{
+        background-color:white;
+        margin-top: 190px;
+        width:250px;
+        border-radius: 20px;
+        margin-left: 50px;
+
+        &:hover{
+            cursor:pointer;
+        }
+    }
+}
+.login{
+    border:1px solid;
+    border-radius: 20px;
+    margin-left: 40%;
+    width:360px;
+    height: 640px;
+    z-index: 1;   
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    button{
+        border: 1px solid;
+        text-align: center;
+        margin-left: 100px;
+        margin-top: 20px;
+        border-radius: 15px;
+        &:hover{
+            color:#fff;
+            background-color: #000;
+            cursor:pointer;
+            animation: ease-in-out;
+        }
+    }
+    input{
+        font-size: 25px;
+        margin:10px;
+        padding:10px;
+        height:45px;
+        border:1px solid;
+        width:85%;
+        &:focus{
+            user-select:none;
+            outline:none;
+    }
+    }
+    #shown{
+        color:$placeholde-color;
+        position:relative;
+        top: -50px;
+        left: 260px;
+        width: 50px;
+        &:hover{
+            cursor:pointer;
+            color:#000;
+        }
+    }
+    input[type="checkbox"]{
+        width:25px;
+        height:25px;
+    }
+}
+.word-main{
+    z-index: -1;
+    border:1px solid;
+    border-radius: 20px;
+    margin-left: 40%;
+    display:flex;
+    flex-direction: column;
+    width:360px;
+    height: 640px;
+    h3{
+        color:#000;
+        text-align:center;
+        font-size: 25px;
+        margin-top:25px
+    }
+    .section{
+        margin-left:25px;
+        margin-top: 80px;
+        h5{
+            color:#000;
+            font-size: 25px;
+        }
+    }
+    .text-header{
+        margin-top: 25px;
+    }
+    .text-header,.text-pg{
+        padding-left: 15px;
+    }
+    .learn-model{
+        background-color:black;
+        border-radius: 20px;
+        text-align: center;
+        width:300px;
+        margin-top:15px;
+        p{
+        color: #fff;
+        text-align:left;
+        font-size: 25px;
+        padding: 10px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: lighter;
+    }
+    h2{
+        font-family: 'Nunito', sans-serif;
+        text-align: left;
+    }
+    button{
+        margin: 10px;
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 15px;
+        width: 100px;
+        height:50px;
+        border:1px solid;
+    &:hover{
+        cursor: pointer;
+    }
+    }
+    }
+    
+}
+nav{
+    margin-top: 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+
+}
+   .menu-icon{
+    padding:10px;
+    margin-left: 300px;
+    &:hover{
+        cursor:pointer
+    }
+}
+
+
+.progress {
+  margin-top: 5px;
+  margin-left: 15px;
+  background: #fff;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  border:1px solid;
+  height: 10px;
+  width: 250px;
+ .progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #4f4f4f;
+    height: 10px;
+    width: 0;
+    position:relative;
+    left:-5px;
+    @keyframes load {
+        0% { width: 0; }
+        100% { width: 8%; }
+        }
+    }
+
+}
+
+
+#overlay{
+    z-index: 3;
+    height:641px;
+    width:220px;
+    background-color:white;
+    position:absolute;
+    left:326px;
+      @media (max-width: 768px) {
+        display:none;
+  }
+}
+.proflle{
+    border:1px solid;
+    border-radius: 20px;
+    margin-left: 40%;
+    width:360px;
+    height: 640px;
+    z-index: 1;   
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    button{
+        border-radius:25px;
+        border:1px solid;
+        margin-top:25px;
+        align-items: flex-end;
+        &:hover{
+            background-color:#000;
+            color:white
+        }
+    }
+    h3{
+        color:#000;
+        font-size:25px;
+        margin-bottom:10px;
+}
+    .avatar-logo{
+        display:flex;
+        margin-top:70px;
+        img{
+        position:relative;
+        left:-90px;
+        width:100px;
+        height:100px;
+        }
+        h2{
+        text-align: center;
+         margin-top: 25px;
+        position: relative;
+         left: -75px;
+        }
+    }
+    ul{
+        width:300px;
+        list-style:none;
+    }
+    .list-item{
+        border-bottom:1px solid;
+        padding: 15px 5px;
+    }
+    .your-word{
+        overflow-y: hidden;
+    }
+}
+.pre-login{
+    border:1px solid;
+    border-radius: 20px;
+    margin-left: 40%;
+    width:360px;
+    height: 640px;
+    z-index: 1;   
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+    button{
+        background-color:$googleblue;
+        border-radius: 25px;
+        color:white;
+        margin-bottom: 50px;
+    }
+    svg{
+    fill: black;
+    position: relative;
+    top: -190px;
+    left: -150px;
+
+    }   
+    h1{
+        letter-spacing: 10px;
+        font-family: 'Nunito', sans-serif;
+
+    }
+}
+
+
+ @media (max-width: 768px) {
+   .pre-login,.word-main,.login,.main,.profile{
+        margin-left:0px
+   }
+  }
